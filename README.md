@@ -1,16 +1,16 @@
-# FedSpace-EF-VFL
+# FedSpace-EFVFL
 
-This repository contains code and experiment outputs for **FedSpace-EF-VFL**, which combines ideas from scheduling in space-aware FL (FedSpace) with communication-efficient Error-Feedback Vertical Federated Learning (EF-VFL).
+This repository contains code and experiment outputs for **FedSpace-EFVFL**, which combines ideas from scheduling in space-aware FL (FedSpace) with communication-efficient Error-Feedback Vertical Federated Learning (EFVFL).
 
 ## Upstream basis
 
-The implementation in the root folder **`Fedspace-EF-VFL/`** is **based on** the EF-VFL reference repository:
+The implementation in the root folder **`Fedspace-EFVFL/`** is **based on** the EFVFL reference repository:
 
 > https://github.com/Valdeira/EF-VFL
 
 ## Contributions
 
-The contributions referenced in the paper are implemented in the following files inside `Fedspace-EF-VFL/`:
+The contributions referenced in the paper are implemented in the following files inside `Fedspace-EFVFL/`:
 
 - `build_dataset.py`
 - `train_regressor.py`
@@ -19,7 +19,7 @@ The contributions referenced in the paper are implemented in the following files
 - `connectivity.py`
 - `scheduler.py`
 
-These changes add the functionality specific to the FedSpace-EF-VFL integration and the experiments reported in the manuscript.
+These changes add the functionality specific to the FedSpace-EFVFL integration and the experiments reported in the manuscript.
 
 ---
 
@@ -53,7 +53,7 @@ These changes add the functionality specific to the FedSpace-EF-VFL integration 
 
 ## Acknowledgments
 
-* This work builds upon the EF-VFL codebase and method by Valdeira *et al.*
+* This work builds upon the EFVFL codebase and method by Valdeira *et al.*
   Source: [https://github.com/Valdeira/EF-VFL](https://github.com/Valdeira/EF-VFL)
 
-If you use this repository, please also acknowledge the EF-VFL authors and cite their work accordingly.
+If you use this repository, please also acknowledge the EFVFL authors and cite their work accordingly.
