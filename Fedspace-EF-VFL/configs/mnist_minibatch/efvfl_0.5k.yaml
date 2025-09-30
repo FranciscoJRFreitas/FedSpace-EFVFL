@@ -1,0 +1,38 @@
+logging:
+  project_name: "EFVFL"
+  experiment_name: "mnist-minibatch-efvfl-0.5k"
+
+data:
+  module_path: "data.mnist"
+  module_name: "MNISTDataModule"
+  params:
+    data_dir: "../data"
+    batch_size: 128
+    num_workers: 4
+
+connectivity:
+  path: "utils/connectivity/connectivity.pkl"
+
+model:
+  module_path: "models.mnist_model"
+  module_name: "ShallowSplitNN"
+  params:
+    input_size: 784
+    num_clients: 149
+    cut_size: 64
+    aggregation_mechanism: "conc"
+    num_classes: 10
+    private_labels: false
+    optimizer: "sgd"
+    lr: 0.02
+    momentum: 0.0
+    weight_decay: 0.0001
+    scheduler: null
+    eta_min_ratio: null
+    compression_type: "ef"
+    compressor: "topk"
+    compression_parameter: 0.5
+    compute_grad_sqd_norm: false
+
+trainer:
+  max_epochs: 100
